@@ -1,0 +1,52 @@
+
+aside{
+    background-color: brown;
+    float: left;
+
+}
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+}
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}   
+
+nav{
+
+    background-color: indianred;
+    position: fixed;
+    right: 200px;
+    word-spacing: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.section{
+    position: fixed;
+    right: 200px;
+    word-spacing: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+    
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> <!--nezz-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--nezz-->
+    <title>Travel & Discover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--nezz-->
+    
+    <link rel="stylesheet" href="css test.css"/>
+    <script src="main.js"></script> <!--nezz-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+        <header>
+                <div class="row">
+                        <div class="col-sm-4">
+                            <div class="quate">
+                                <p>To travel is to discover that everyone is wrong about other countries.</p>
+                            </div>
+                               
+                        </div>
+                
+            
+                <div class="col-sm-4">
+                        <img src="TWK.png" alt="logo picture">
+                </div>
+            
+                <div class="col-sm-4"> 
+                        <ul>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                                <li><a href="news.asp">shop</a></li>
+                                <li><a href="contact.asp">about</a></li>
+                               
+                              </ul>
+                              <br>
+            
+                </div> 
+            </div>
+            
+            
+
+            
+        </header>
+
+        <article>
+            <div class="imageGallery">
+
+                <div class="images">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="IMG_2410.JPG" style="width:100%">
+                </div>
+
+                <div class="images">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="IMG_2688.JPG" style="width:100%">
+                </div>
+
+                <div class="images">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="IMG_2410.JPG" style="width:100%">
+                </div>
+
+                <div class="images">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="IMG_0012.JPG" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusImage(-1)">&#10094;</a>
+                <a class="next" onclick="plusImage(1)">&#10095;</a>
+
+                <div class="caption-image">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="rowG">
+                    <div class="columnG">
+                        <img class="demo cursor" src="IMG_2410.JPG" style="width:100%" onclick="currentImage(1)" alt="IMage">
+                    </div>
+
+                    <div class="columnG">
+                        <img class="demo cursor" src="IMG_2688.JPG" style="width:100%" onclick="currentImage(2)" alt="IMage">
+                    </div>
+
+                    <div class="columnG">
+                        <img class="demo cursor" src="IMG_2410.JPG" style="width:100%" onclick="currentImage(3)" alt="IMage">
+                    </div>
+
+                    <div class="columnG">
+                        <img class="demo cursor" src="IMG_0012.JPG" style="width:100%" onclick="currentImage(4)" alt="IMage">
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                var imageIn =1;
+                showImage(imageIn);
+
+                function plusImage(n){
+                    showImage(imageIn += n);
+                }
+
+                function currentImage(n){
+                    showImage(imageIn = n);
+                }
+
+                function showImage(n){
+                    var i;
+                    var pic = document.getElementsByClassName("images");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionTx = document.getElementById("caption");
+
+                    if (n>pic.length) {imageIn=1}
+                    if (n<1){imageIn=pic.length}
+
+                    for(i=0; i<pic.length; i++){
+                        pic[i].style.display="none";
+                    }
+
+                    for(i=0; i<dots.length; i++){
+                        dots[i].className=dots[i].className.replace(" active", "");
+                    }
+
+                    pic[imageIn-1].style.display="block";
+                    dots[imageIn-1].className += " active";
+                    captionTx.innerHTML = dots[imageIn-1].alt;
+                }
+            
+            </script>
+
+        </article>
+</body>
+</html>

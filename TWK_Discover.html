@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TWK Discover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS_Discover.css" />
+    <script src="main.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <header>
+            <div class="topnav" id="myTopnav">
+                    <a href="WebpageTWK.html">Home</a>
+                    <a href="TWK_Discover.html">Discover</a>
+                    <a id="myBtn">destination</a>
+                    <a href="TWK_Gallery.html">gallery</a>
+                    <a href="TWK_Contact.html">contact us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- The Modal -->
+                <div id="myModalB" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Sorry, under construction!</p>
+                    </div>
+                </div>
+
+                <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>      
+        <script>
+                // Get the modal
+                var modal = document.getElementById('myModalB');
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modalB.style.display = "none";
+                    }
+                }
+        </script>  
+
+    </header>
+
+
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <section id="slideShow" id="slides">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div id="sText">
+                                <h1 id="head">What we are?</h1>
+                            <p>Designing unforgettable vacations requires extensive travel planning experience—and a deep-seated passion for a 
+                                particular place or style of travel.</p>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                        
+                    <div class="slideShowContainer" >
+                            <div class="slides">
+                                <img src="pic small/20180626_202155.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1411.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1414.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1504.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1506.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1818.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1829.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1928.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1889.jpg" alt="bilde" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <img src="pic small/IMG_1967.jpg" alt="bilde" style="width:100%">
+                            </div>
+                        
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                </div>
+            </div>
+
+        
+            <script>
+                var slideIn = 0;
+            var slideInA = 1;
+            showSlidesA(slideInA);
+            showSlides()
+            
+            function plusSlides(n) {
+                showSlidesA(slideInA += n)
+            }
+        
+            function currentSlide(n){
+                showSlidesA(slideInA = n);
+            }
+            
+            
+            function showSlidesA(n){
+                var i;
+                var slidesVar = document.getElementsByClassName("slides");
+                
+                if (n>slidesVar.length) {slideInA=1}
+                if (n<1) {slideInA=slidesVar.length}
+        
+                for (i=0; i < slidesVar.length; i++){
+                    slidesVar[i].style.display = "none";
+                }
+                slidesVar[slideInA-1].style.display="block";
+                
+            }
+        
+            
+        
+            function showSlides(){
+                var i;
+                var slides = document.getElementsByClassName("slides");
+        
+                for (i=0; i<slides.length; i++){
+                    slides[i].style.display="none";
+                }
+        
+                slideIn++;
+                if (slideIn>slides.length) {slideIn=1}
+        
+                slides[slideIn-1].style.display="block";
+                setTimeout(showSlides, 4000);
+            }
+        
+            </script>
+            </section>
+
+
+            <footer>
+                    <div class="icon-bar">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+                    </div>
+                    </footer>
+    
+</body>
+</html>

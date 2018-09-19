@@ -1,0 +1,225 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" /> <!--nezz-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--nezz-->
+    <title>Travel & Discover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--nezz-->
+    
+    <link rel="stylesheet" href="port2css.css"/>
+    <script src="main.js"></script> <!--nezz-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+            <header>
+                    <div class="row">
+                            <div class="col-sm-4">
+                                <div class="quate">
+                                    <p>To travel is to discover that everyone is wrong about other countries.</p>
+                                </div>
+                                   
+                            </div>
+                    
+                
+                    <div class="col-sm-4 ">
+                            <img src="TWK.png" alt="logo picture">
+                    </div>
+                
+                    <div class="col-sm-4 "> 
+                            <ul>
+                                    <li><a href="portfolio.html">portfolio</a></li>
+                                    <li><a href="news.asp">shop</a></li>
+                                    <li><a href="contact.asp">about</a></li>
+                                   
+                                  </ul>
+                                </div> 
+                            </div>  
+                
+                
+              
+            </header>
+ 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       
+            <article>
+                <div class="rowG">
+                    <div class="columnG">
+                        <img src="pictures/1.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="pictures/2.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        <!--<img src="IMG_0012.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_0012.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_0012.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_0012.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+                    </div>
+                    <div class="columnG">
+                        <img src="pictures/3.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        <img src="pictures/4.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        <!--<img src="IMG_1889.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1889.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1889.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1889.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+                    </div>
+                    <div class="columnG">
+                        <img src="pictures/5.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                        <img src="pictures/6.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                        <!--<img src="IMG_1829.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1829.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1829.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1829.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1829.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+                    </div>
+                    <div class="columnG">
+                        <img src="pictures/7.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                        <img src="pictures/8.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                        <!--<img src="IMG_1928.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1928.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1928.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1928.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <img src="IMG_1928.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+                    </div>
+                </div>
+
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;
+                    </span>
+                    <div class="modalContent">
+                        <div class="mySlides">
+                            <div class="numberText">1 / 4</div>
+                            <img src="pictures/1.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numberText">2 / 4</div>
+                            <img src="pictures/2.JPG" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <div class="numberText">3 / 4</div>
+                            <img src="pictures/3.JPG" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <div class="numberText">4 / 4</div>
+                            <img src="pictures/4.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numberText">4 / 4</div>
+                            <img src="pictures/5.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numberText">4 / 4</div>
+                            <img src="pictures/6.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numberText">4 / 4</div>
+                            <img src="pictures/7.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numberText">4 / 4</div>
+                            <img src="pictures/8.JPG" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="cationContainer">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/1.JPG" onclick="currentSlide(1)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/2.JPG" onclick="currentSlide(2)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/3.JPG" onclick="currentSlide(3)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/4.JPG" onclick="currentSlide(4)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/5.JPG" onclick="currentSlide(5)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/6.JPG" onclick="currentSlide(6)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/7.JPG" onclick="currentSlide(7)" alt="Pirmais">
+                        </div>
+
+                        <div class="columnG">
+                            <img class="demo" src="pictures/8.JPG" onclick="currentSlide(8)" alt="Pirmais">
+                        </div>
+                                    
+                    </div>
+                </div>
+
+            <script>
+                function openModal(){
+                    document.getElementById('myModal').style.display = "block";
+                }
+
+                function closeModal(){
+                    document.getElementById('myModal').style.display = "none";
+                }
+
+                var slideIn = 1;
+                showSlides(slideIn);
+
+                function plusSlides(n){
+                    showSlides(slideIn += 1);
+                }
+
+                function currentSlide(n){
+                    showSlides(slideIn=n);
+                }
+
+                function showSlides(n){
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionTx = document.getElementById("caption");
+
+                    if (n>slides.length) {slideIn = 1}
+                    if(n<1){slideIn=slides.length}
+
+                    for (i=0; i<slides.length; i++){
+                        slides[i].style.display = "none";
+                    }
+
+                    for (i=0; i<dots.length; i++){
+                        dots[i].className = dots[i].className.replace(" active","");
+                    }
+
+                    slides[slideIn-1].style.display = "block";
+                    dots[slideIn-1].className += " active";
+                    captionTx.innerHTML = dots[slideIn-1].alt;
+
+                }
+            </script>    
+
+            </article>
+    </body>
+
+</html>

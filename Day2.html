@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Virsraksts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Day2css.css">
+
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+     <h1>header</h1>
+
+     <div id="aa">
+        RANDOM
+     </div>
+
+     <button id="button">Click Me!</button>
+
+     <div id="bb" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.js"
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous"></script>
+        <!--sis ie nepieciešams lai lapa pilniba ieladetos un tikai tad stradatu skripts, console.blog ir labaks pa alert-->
+     <script>
+     $(document).ready(function(){ 
+         
+        $("#button").click(function(){ 
+            console.log("Yelloooww"); 
+            
+
+        })
+
+       $("#button").click(function(){ 
+           $("#aa").append("<button>aa</button>"); 
+  
+            })
+
+        $("#button").click(function(){
+            $("#bb").animate({left: '250px'});
+        }); 
+
+        $("button").click(function(){
+        $.get("http://www.omdbapi.com/?apikey=4a1cb752&i=tt0387808", function(data){
+            $("#aa").append("<img src='"+data.Poster+"' alt ='"+data.Title+"'>");
+        });
+
+      
+
+});
+})
+  
+    </script>
+
+            
+    </header>
+
+
+    <section>
+
+    <nav>
+    
+            Shop
+            About
+            Contact
+    
+    </nav>
+
+
+
+    <article>
+        <p>article</p>
+    </article>
+
+    <aside>
+    <p>aside</p> 
+    </aside>
+        
+</section>
+
+    <footer>
+            <p>Footer</p>
+    </footer>
+        
+
+
+</body>
+
+
+
+
+</html> 
