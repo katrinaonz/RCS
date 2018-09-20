@@ -60,7 +60,7 @@ header .row{
 
 header{
     height: 600px;
-    background: url(IMG_1504.jpg);
+    background: url(pictures/IMG_1504.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -140,8 +140,6 @@ footer{
     overflow: hidden;
     background-color: white;
     background-size: contain;
-    
-   
   }
   
   .topnav a {
@@ -155,7 +153,7 @@ footer{
     font-family: ostrichSansBlack;
   }
   
-  .topnav a:hover,.dropdown:hover .dropbtn {
+  .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: grey;
     color: black;
   }
@@ -260,7 +258,7 @@ footer{
     display: block;
     text-align: left;
   }
-  .topnav.responsive . {float: none;}
+  .topnav.responsive     {float: none;}
   .topnav.responsive  {position: relative;}
   .topnav.responsive  {
     display: block;
